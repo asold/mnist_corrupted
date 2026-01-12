@@ -38,7 +38,7 @@ class MyAwesomeModel(pl.LightningModule):
         x = torch.flatten(x, 1)
         x = self.dropout(x)
         return self.fc(x)
-    
+
     def training_step(self, batch):
         """Training step."""
         img, target = batch
@@ -48,7 +48,7 @@ class MyAwesomeModel(pl.LightningModule):
     def configure_optimizers(self):
         """Configure optimizer."""
         return torch.optim.Adam(self.parameters(), lr=1e-3)
-    
+
     def training_step(self, batch, batch_idx):
         img, target = batch
         preds = self(img)
@@ -65,7 +65,7 @@ class MyAwesomeModel(pl.LightningModule):
             )
 
         return loss
-    
+
     def validation_step(self, batch, batch_idx):
         img, target = batch
         preds = self(img)
