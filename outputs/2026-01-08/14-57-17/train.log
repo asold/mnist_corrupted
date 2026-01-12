@@ -1,0 +1,2 @@
+[2026-01-08 14:57:17,848][__main__][INFO] - Configuration:
+{'model': {'conv1_out': 32, 'conv2_out': 64, 'conv3_out': 128, 'dropout': 0.5, 'num_classes': 10}, 'training': {'lr': 0.001, 'batch_size': 32, 'epochs': 10, 'seed': 123}}

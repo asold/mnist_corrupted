@@ -1,0 +1,2 @@
+- training.seed=123
+- training.epochs=5

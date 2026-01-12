@@ -1,0 +1,61 @@
+_wandb:
+    value:
+        cli_version: 0.23.1
+        e:
+            ld3mgryiq8a4riuyyp4tgkmg9nuu8gf2:
+                codePath: mnist_exercise\src_wandb\train_images.py
+                codePathLocal: src_wandb\train_images.py
+                cpu_count: 8
+                cpu_count_logical: 16
+                cudaVersion: "12.6"
+                disk:
+                    /:
+                        total: "997001072640"
+                        used: "891318304768"
+                email: s243873@dtu.dk
+                executable: C:\Users\asold\DTU_Local\MLOps\dtu_mlops\mnist_exercise\.venv\Scripts\python.exe
+                git:
+                    commit: af0c111989de3b77c3ae52402f070f9800be1b77
+                    remote: https://github.com/SkafteNicki/dtu_mlops.git
+                gpu: NVIDIA GeForce RTX 3050 Laptop GPU
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Ampere
+                      cudaCores: 2048
+                      memoryTotal: "4294967296"
+                      name: NVIDIA GeForce RTX 3050 Laptop GPU
+                      uuid: GPU-e2cddf15-3aa2-a260-6c92-fa4ad8b56e51
+                host: Andrei
+                memory:
+                    total: "16370769920"
+                os: Windows-11-10.0.26100-SP0
+                program: C:\Users\asold\DTU_Local\MLOps\dtu_mlops\mnist_exercise\src_wandb\train_images.py
+                python: CPython 3.12.10
+                root: C:\Users\asold\DTU_Local\MLOps\dtu_mlops\mnist_exercise
+                startedAt: "2026-01-08T12:34:08.255073Z"
+                writerId: ld3mgryiq8a4riuyyp4tgkmg9nuu8gf2
+        m: []
+        python_version: 3.12.10
+        t:
+            "1":
+                - 1
+                - 5
+                - 53
+            "2":
+                - 1
+                - 5
+                - 53
+            "3":
+                - 16
+            "4": 3.12.10
+            "5": 0.23.1
+            "8":
+                - 3
+            "12": 0.23.1
+            "13": windows-amd64
+batch_size:
+    value: 32
+epochs:
+    value: 5
+lr:
+    value: 0.001

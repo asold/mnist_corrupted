@@ -1,0 +1,44 @@
+Traceback (most recent call last):
+  File "C:\Users\asold\DTU_Local\MLOps\dtu_mlops\mnist_exercise\src_wandb\train.py", line 44, in <module>
+    typer.run(train)
+  File "C:\Users\asold\DTU_Local\MLOps\dtu_mlops\mnist_exercise\.venv\Lib\site-packages\typer\main.py", line 1092, in run
+    app()
+  File "C:\Users\asold\DTU_Local\MLOps\dtu_mlops\mnist_exercise\.venv\Lib\site-packages\typer\main.py", line 336, in __call__
+    raise e
+  File "C:\Users\asold\DTU_Local\MLOps\dtu_mlops\mnist_exercise\.venv\Lib\site-packages\typer\main.py", line 319, in __call__
+    return get_command(self)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asold\DTU_Local\MLOps\dtu_mlops\mnist_exercise\.venv\Lib\site-packages\click\core.py", line 1485, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asold\DTU_Local\MLOps\dtu_mlops\mnist_exercise\.venv\Lib\site-packages\typer\core.py", line 726, in main
+    return _main(
+           ^^^^^^
+  File "C:\Users\asold\DTU_Local\MLOps\dtu_mlops\mnist_exercise\.venv\Lib\site-packages\typer\core.py", line 190, in _main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "C:\Users\asold\DTU_Local\MLOps\dtu_mlops\mnist_exercise\.venv\Lib\site-packages\click\core.py", line 1269, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asold\DTU_Local\MLOps\dtu_mlops\mnist_exercise\.venv\Lib\site-packages\click\core.py", line 824, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asold\DTU_Local\MLOps\dtu_mlops\mnist_exercise\.venv\Lib\site-packages\typer\main.py", line 706, in wrapper
+    return callback(**use_params)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asold\DTU_Local\MLOps\dtu_mlops\mnist_exercise\src_wandb\train.py", line 19, in train
+    model = MyAwesomeModel().to(DEVICE)
+            ^^^^^^^^^^^^^^^^
+TypeError: MyAwesomeModel.__init__() missing 5 required positional arguments: 'conv1_out', 'conv2_out', 'conv3_out', 'dropout', and 'num_classes'
+[31m╭─[0m[31m─────────────────────────────────────────────────────────────────────────────────────────────────────[0m[31m [0m[1;31mTraceback [0m[1;2;31m(most recent call last)[0m[31m [0m[31m─────────────────────────────────────────────────────────────────────────────────────────────────────[0m[31m─╮[0m
+[31m│[0m C:\Users\asold\DTU_Local\MLOps\dtu_mlops\mnist_exercise\src_wandb\train.py:19 in train                                                                                                                                                        [31m│[0m
+[31m│[0m                                                                                                                                                                                                                                               [31m│[0m
+[31m│[0m   [2m16 [0m[2m│   │   [0mconfig={[33m"[0m[33mlr[0m[33m"[0m: lr, [33m"[0m[33mbatch_size[0m[33m"[0m: batch_size, [33m"[0m[33mepochs[0m[33m"[0m: epochs},                   [34m╭─[0m[34m─────[0m[34m locals [0m[34m─────[0m[34m─╮[0m                                                                                                                          [31m│[0m
+[31m│[0m   [2m17 [0m[2m│   [0m)                                                                                    [34m│[0m [3;33mbatch_size[0m[31m =[0m [1;36m32[0m    [34m│[0m                                                                                                                          [31m│[0m
+[31m│[0m   [2m18 [0m[2m│   [0m                                                                                     [34m│[0m     [3;33mepochs[0m[31m =[0m [1;36m5[0m     [34m│[0m                                                                                                                          [31m│[0m
+[31m│[0m [31m❱ [0m19 [2m│   [0mmodel = [1;4mMyAwesomeModel()[0m.to(DEVICE)                                                  [34m│[0m         [3;33mlr[0m[31m =[0m [1;36m0.001[0m [34m│[0m                                                                                                                          [31m│[0m
+[31m│[0m   [2m20 [0m[2m│   [0mtrain_set, _ = corrupt_mnist()                                                       [34m╰────────────────────╯[0m                                                                                                                          [31m│[0m
+[31m│[0m   [2m21 [0m[2m│   [0m                                                                                                                                                                                                                                     [31m│[0m
+[31m│[0m   [2m22 [0m[2m│   [0mtrain_dataloader = torch.utils.data.DataLoader(train_set, batch_size=batch_size)                                                                                                                                                     [31m│[0m
+[31m╰───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯[0m
+[1;91mTypeError: [0m[1;35mMyAwesomeModel.__init__[0m[1m([0m[1m)[0m missing [1;36m5[0m required positional arguments: [32m'conv1_out'[0m, [32m'conv2_out'[0m, [32m'conv3_out'[0m, [32m'dropout'[0m, and [32m'num_classes'[0m

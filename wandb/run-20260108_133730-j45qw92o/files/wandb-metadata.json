@@ -1,0 +1,40 @@
+{
+  "os":  "Windows-11-10.0.26100-SP0",
+  "python":  "CPython 3.12.10",
+  "startedAt":  "2026-01-08T12:37:30.588427Z",
+  "program":  "C:\\Users\\asold\\DTU_Local\\MLOps\\dtu_mlops\\mnist_exercise\\src_wandb\\train_images.py",
+  "codePath":  "mnist_exercise\\src_wandb\\train_images.py",
+  "codePathLocal":  "src_wandb\\train_images.py",
+  "git":  {
+    "remote":  "https://github.com/SkafteNicki/dtu_mlops.git",
+    "commit":  "af0c111989de3b77c3ae52402f070f9800be1b77"
+  },
+  "email":  "s243873@dtu.dk",
+  "root":  "C:\\Users\\asold\\DTU_Local\\MLOps\\dtu_mlops\\mnist_exercise",
+  "host":  "Andrei",
+  "executable":  "C:\\Users\\asold\\DTU_Local\\MLOps\\dtu_mlops\\mnist_exercise\\.venv\\Scripts\\python.exe",
+  "cpu_count":  8,
+  "cpu_count_logical":  16,
+  "gpu":  "NVIDIA GeForce RTX 3050 Laptop GPU",
+  "gpu_count":  1,
+  "disk":  {
+    "/":  {
+      "total":  "997001072640",
+      "used":  "891350147072"
+    }
+  },
+  "memory":  {
+    "total":  "16370769920"
+  },
+  "gpu_nvidia":  [
+    {
+      "name":  "NVIDIA GeForce RTX 3050 Laptop GPU",
+      "memoryTotal":  "4294967296",
+      "cudaCores":  2048,
+      "architecture":  "Ampere",
+      "uuid":  "GPU-e2cddf15-3aa2-a260-6c92-fa4ad8b56e51"
+    }
+  ],
+  "cudaVersion":  "12.6",
+  "writerId":  "sj2ivzn5l32pza5r3f4y4bs7ghe7x5ed"
+}
