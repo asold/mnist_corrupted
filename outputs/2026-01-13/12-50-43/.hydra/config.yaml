@@ -1,0 +1,11 @@
+model:
+  conv1: 32
+  conv2: 64
+  conv3: 128
+  dropout: 0.5
+  num_classes: 10
+training:
+  lr: 0.001
+  batch_size: 32
+  epochs: 2
+  seed: 123
